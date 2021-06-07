@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Automated Prize Draw</title>
+
+</head>
+<body>
+   
+
+    <div id="modal" class="modalClosed">
+        <div class="content">
+            <strong onclick="closeModal()">X</strong>
+            <p>The drawn number was...</p>
+            <h2 class="result" id="result"></h2>
+            <button type="button" onClick="raffle()">New Drawn.</button>
+        </div>
+    </div>
+    <div class="container">
+        <main>
+           
+            <h1>Automated Prize Draw</h1>
+            <p>Number generator for sweepstakes</p>
+        
+           
+        </main>
+        <section>
+            <h2>Enter how many numbers your draw has</h2>
+            <small>The drawer will give a number between 1 to the number you provide</small>
+            <input type="number" id="number" placeholder="  Exemplo: 50" required>
+            <button type="button" onClick="raffle()">Draw!</button>
+        </section>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
